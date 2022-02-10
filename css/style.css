@@ -101,11 +101,14 @@ textarea {
     padding: 10px;
     color: #4f4f4f;
 }
+.socialfooter a i:hover {
+    border: 1px solid #000;
+    color: #000;
+}
 .socialfooter a {
     margin: 0 5px;
     text-decoration: none;
 }
-
 .untitled {
     text-transform: uppercase;
     display: flex;
@@ -128,6 +131,17 @@ textarea {
     .borderright .borderbottomnone {
         border-bottom: none;
     }
+    .marginli {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .marginli li {
+        margin: 0 30px;
+    }
+    .marginli {
+        font-size: 30px;
+    }
 }
 @media (min-width: 991.5px) {
      .borderright .borderthreeright {
@@ -144,4 +158,28 @@ textarea {
     .borderright .twoblock {
         border-right: none;
     }
+}
+.btnnew {
+    color: #fff;
+    border-color: #fff;
+}
+.btnnew:hover {
+    color: #ccc;
+    border-color: #ccc;
+}
+.block_gallery {
+    display: none;
+}
+.blockgall:hover .block_gallery {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
